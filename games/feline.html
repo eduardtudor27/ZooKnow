@@ -1,0 +1,191 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ | Feline</title>
+  <link rel="icon" type="image/png" href="..\assets/img/ideas.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAweome CDN Link for Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="..\assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="..\assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="..\assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="..\assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #eaa440;">
+   <!-- ======= Property Search Section ======= -->
+   <div class="click-closed"></div>
+   <!--/ Form Search Star /-->
+   <div class="box-collapse">
+     <div class="title-box-d">
+       <h3 class="title-d">Caută un animal</h3>
+     </div>
+     <span class="close-box-collapse right-boxed bi bi-x"></span>
+     <div class="box-collapse-wrap form">
+       <form class="form-a">
+         <div class="row">
+           <div class="col-md-12 mb-2">
+             <div class="form-group">
+               <label class="pb-2" for="Type">Keyword</label>
+               <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+             </div>
+           </div>
+ 
+           <div class="col-md-12">
+             <button type="submit" class="btn btn-b">Caută...</button>
+           </div>
+         </div>
+       </form>
+     </div>
+   </div><!-- End Property Search Section -->
+ 
+   <!-- ======= Header/Navbar ======= -->
+   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+     <div class="container">
+       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span></span>
+         <span></span>
+         <span></span>
+       </button>
+       <a class="navbar-brand text-brand" href="..\index.html">Zoo<span class="color-b">Know</span></a>
+ 
+       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+         <ul class="navbar-nav">
+ 
+           <li class="nav-item">
+             <a class="nav-link " href="..\index.html">Acasa</a>
+           </li>
+ 
+           <li class="nav-item">
+             <a class="nav-link " href="..\animale.html">Animale</a>
+           </li>
+ 
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">Joculețe</a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item " href=""></a>
+               <a class="dropdown-item active " href="feline.html">Quiz-Feline</a>
+               <a class="dropdown-item " href="padure.html">Quiz-Păduri</a>
+               <a class="dropdown-item " href="panda.html">Quiz-Panda</a>
+               <a class="dropdown-item " href="rechin.html">Quiz-Rechin</a>
+               <a class="dropdown-item " href="girafe.html">Quiz-Girafe</a>
+             </div>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="..\contact.html">Contact</a>
+           </li>
+         </ul>
+       </div>
+ 
+       <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
+         data-bs-target="#navbarTogglerDemo01">
+         <i class="bi bi-search"></i>
+       </button>
+ 
+     </div>
+   </nav><!-- End Header/Navbar -->
+
+
+
+  <!-- start Quiz button -->
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <!-- Info Box -->
+  <div style="margin-top: 20px;" class="info_box">
+    <div class="info-title"><span>Some Rules of this Quiz</span></div>
+    <div class="info-list">
+      <div class="info">1. Vei avea doar <span>15 secunde</span> pentru fiecare întrebare.</div>
+      <div class="info">2. După ce ați selectat răspunsul, acesta nu poate fi anulat.</div>
+      <div class="info">3. Nu puteți selecta "nicio" opțiune odată ce timpul a trecut.</div>
+      <div class="info">4. Nu puteți ieși din quiz în timp ce jucați.</div>
+      <div class="info">5. Vei obține puncte pe baza răspunsurilor corecte.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div style="margin-top: 50px;" class="quiz_box">
+    <header>
+      <div class="title">Feline</div>
+      <div class="timer">
+        <div class="time_left_txt">Timp rămas</div>
+        <div class="timer_sec">15</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Here I've inserted question from JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Here I've inserted options from JavaScript -->
+      </div>
+    </section>
+
+    <!-- footer of Quiz Box -->
+    <footer>
+      <div class="total_que">
+        <!-- Here I've inserted Question Count Number from JavaScript -->
+      </div>
+      <button class="next_btn">Următoarea înt</button>
+    </footer>
+  </div>
+
+  <!-- Result Box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text">
+      <!-- Here I've inserted Score Result from JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+  <script src="js/quefeline.js"></script>
+
+  <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+  <script src="js/script.js"></script>
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="..\assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="..\assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="..\assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="..\assets/js/main.js"></script>
+
+</body>
+
+</html>
